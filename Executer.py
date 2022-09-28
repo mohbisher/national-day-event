@@ -6,12 +6,10 @@ import time
 
 from Gaussian import gaussian
 from Pointer import get_next
-color1 = "green"
+color1 = "black"
 color2 = "gold"
-# color1 = "black"
-# color2 = "gold"
-# color1 = "green"
-# color2 = "black"
+
+
 class ExecuterClass:
 
 
@@ -82,4 +80,4 @@ class ExecuterClass:
 
 obj = ExecuterClass()
 obj.execute(30, color1)
-#
+###

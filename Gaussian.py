@@ -6,4 +6,4 @@ def gaussian(point):
     th3 = cv2.adaptiveThreshold(blurred, maxValue=255, adaptiveMethod=cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
                                 thresholdType=cv2.THRESH_BINARY, blockSize=9, C=2)
     return th3  # Return
-
+##
