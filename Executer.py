@@ -6,7 +6,12 @@ import time
 
 from Gaussian import gaussian
 from Pointer import get_next
-
+color1 = "green"
+color2 = "gold"
+# color1 = "black"
+# color2 = "gold"
+# color1 = "green"
+# color2 = "black"
 class ExecuterClass:
 
 
@@ -14,7 +19,7 @@ class ExecuterClass:
 
         win = turtle.Screen()
         win.bgcolor('white')
-        point = '/Users/mohbisher/Desktop/folder/pen.png'
+        point = '/Users/mohbisher/Desktop/folder/pen1.png'
         controller = cv2.imread(point, 0)
         th3 = gaussian(point)
         plt.show()
@@ -48,8 +53,11 @@ class ExecuterClass:
                 print('Drawing direction:', counter)
                 if counter % speed == 0:
                     turtle.update()
-
-
+                change = 5000
+                if counter % change == 0:
+                    t.pencolor(color2)
+                if counter % (change*2) == 0:
+                    t.pencolor(color1)
 
                 current_pos = np.asarray(t.pos())
                 new_pos = np.asarray(p)
@@ -66,4 +74,4 @@ class ExecuterClass:
 
 
 obj = ExecuterClass()
-obj.execute(30, 'black')
+obj.execute(30, color1)
