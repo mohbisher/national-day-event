@@ -7,4 +7,4 @@ def get_next(p, positions):
         i_min = np.argmin(distances)
         return positions[i_min]
     else:
-        return None
+        return None  # No positions

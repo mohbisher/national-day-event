@@ -19,8 +19,15 @@ class ExecuterClass:
 
         win = turtle.Screen()
         win.bgcolor('white')
-        point = '/Users/mohbisher/Desktop/folder/pen1.png'
         controller = cv2.imread(point, 0)
+
+
+
+
+
+
+
+        point = '/Users/mohbisher/Desktop/folder/pen1.png'
         th3 = gaussian(point)
         plt.show()
 
@@ -75,3 +82,4 @@ class ExecuterClass:
 
 obj = ExecuterClass()
 obj.execute(30, color1)
+#
